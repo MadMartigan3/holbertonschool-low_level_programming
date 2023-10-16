@@ -6,22 +6,22 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-int n = 12;
+int n;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
 if (n > 0)
 {
-printf("is positive");
+printf("12 is positive");
 }
 if (n == 0)
 {
-printf("is zero");
+printf("0 is zero");
 }
 if (n < 0)
 {
-printf("is negative");
+printf("-12 is negative");
 }
 return (0);
 }
