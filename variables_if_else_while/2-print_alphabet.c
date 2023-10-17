@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - function
+ * main - Entry point
+ *
+ * Description: 'use the command putchar for display the alphabet'
  *
  *@putchar
  *
- *Always return Success (0)
-**/
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
@@ -18,5 +20,5 @@ int main(void)
 		alphabet++;
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
