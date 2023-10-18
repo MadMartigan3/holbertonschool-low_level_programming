@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * _abs - function that computes the absolute value of an integrer
+ *
+ *@n : the integrer
+ *
+ * Return: the absolute value
+*/
+
+int _abs(int)
+{
+	if (n >= O)
+		return (n);
+	else
+		return (-n);
+}
