@@ -1,0 +1,14 @@
+#include "main.h"
+
+/**
+ * mul - function that multiplies two integrer
+ *@a: number 1
+ *@b: number 2
+ *
+ * Return: multiple of two numbers
+ */
+
+int mul(int a, int b)
+{
+	return (a * b);
+}
