@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - function that take a pointers
- *
+ *@n: parameters need to be checked
  *
 */
 
