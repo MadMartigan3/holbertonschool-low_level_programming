@@ -2,7 +2,8 @@
 #include <stdio.h>
 /**
  * print_array - function that prints n elements of an array of integers
- *
+ *@a: input
+ *@n: input need to be checked
  *
 */
 
