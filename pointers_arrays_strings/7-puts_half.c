@@ -8,25 +8,25 @@
 
 void puts_half(char *str)
 {
-	int s, v;
+	int taille, valeur;
 
-	s = 0;
-	for (v = 0; str[v] != 0; v++)
+	taille = 0;
+	for (valeur = 0; str[valeur] != 0; valeur++)
 	{
-		s++;
+		taille++;
 	}
-	if (s % 2 == 0)
+	if (taille % 2 == 0)
 	{
-		for (v = s / 2; v < s; v++)
+		for (valeur = taille / 2; valeur < taille; valeur++)
 		{
-			_putchar(str[v]);
+			_putchar(str[valeur]);
 		}
 	}
 	else
 	{
-		for (v = (s / 2) + 1; v < s; v++)
+		for (valeur = (taille -1) / 2; valeur < taille; valeur++)
 		{
-			_putchar(str[v]);
+			_putchar(str[valeur]);
 		}
 	}
 	_putchar('\n');
