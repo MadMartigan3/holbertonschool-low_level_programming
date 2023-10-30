@@ -1,0 +1,37 @@
+#include "main.h"
+
+/**
+ * prime1 - function helper
+ *@a: same number as n
+ *@b: number that iterates from 1 to n
+ *
+ * Return: 1 success.
+ */
+
+int prime1(int a, int b)
+{
+	if (a == b)
+	{
+		return (1);
+	}
+	else if (a % b == 0)
+	{
+		return (0);
+	}
+	return (prime1(a, b + 1));
+}
+/**
+ * is_prime_number - function that returns 1 if the input is a prime
+ * number
+ *@n: integer
+ *
+ * Return: 1 success
+*/
+int is_prime_number(int n)
+{
+	if (n <= 1)
+	{
+		return (0);
+	}
+	return (prime1(n, 2));
+}
