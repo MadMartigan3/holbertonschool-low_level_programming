@@ -37,12 +37,16 @@ void print_float(va_list ap)
 
 void print_string(va_list ap)
 {
-	char *str = va_arg(ap, char *);
+	char *str;
+
+	str = va_arg(ap, char *);
 
 	if (str == NULL)
-		printf("(nil)");
-	else
-		printf("%s", str);
+	{
+		str = "(nil)";
+	}
+
+	printf("%s", str);
 }
 
 
@@ -57,8 +61,7 @@ void print_all(const char * const format, ...)
 	char *sep = "";
 	va_list ap;
 
-	choice list[] =
-		{
+	choice list[] = {
 			{'c', print_char},
 			{'f', print_float},
 			{'i', print_int},
