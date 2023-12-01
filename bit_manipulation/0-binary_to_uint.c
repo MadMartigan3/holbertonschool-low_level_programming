@@ -16,12 +16,21 @@ unsigned int binary_to_uint(const char *b)
     {
         return (0);
     }
+/**
+ * Itère à travers la chaîne binaire 
+ * jusqu'à ce qu'un chiffre non binaire soit rencontré.
+*/
 
     while (b[i] == '0' || b[i] == '1')
     {
-        val <<= 1;
-        val += b[i]-'0';
-        i++;
+        if (b[i] == '1')
+        {
+        // Décale le résultat actuel vers la gauche de 1 bit (multiplication x2)
+            val <<= 1;
+        // Ajoute le chiffre binaire actuel (converti de caractère en entier) au résultat.
+            val += b[i]-'0';
+            i++;
+        }
     }
     return (val);
 }
