@@ -2,9 +2,9 @@
 
 /**
  * hash_table_create - function that create a hash table
- *  @size: size of array
+ *@size: size of array
  * 
- * Return: new hash table
+ *Return: new hash table
 */
 
 hash_table_t *hash_table_create(unsigned long int size)
@@ -16,6 +16,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
     if (nt == NULL)
     {
+        free(nt);
         return (NULL);
     }
     nt->size = size;
@@ -24,6 +25,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
     if (nt->array == NULL)
     {
+        free(nt);
         return (NULL);
     }
 
